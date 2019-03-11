@@ -1,0 +1,64 @@
+header {
+  background: linear-gradient(
+      rgba(@second-color, 0.45),
+      rgba(@second-color, 0.45),
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("../img/header.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 100vw;
+  height: 100vh;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 40%;
+    bottom: -150px;
+    position: absolute;
+    background: @main-color;
+    transform: 100% 100%;
+    clip-path: polygon(0 0, 100% 100%, 0 100%, 0 100%);
+  }
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 40%;
+    bottom: -150px;
+    position: absolute;
+    background: @second-color;
+    transform: 100% 100%;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+}
+
+.header_main {
+  .flex-content(center, center);
+  padding-top: 15rem;
+  color: @white;
+
+  &--container {
+    padding: 1rem;
+
+    h1 {
+      padding-bottom: 2rem;
+      font-weight: 800;
+    }
+
+    p {
+      text-align: center;
+      padding-bottom: 1.5rem;
+      font-weight: 300;
+    }
+
+    .btn {
+      .btn-style(30%, @white, @second-color);
+      outline: none;
+      margin-left: 20rem;
+    }
+  }
+}

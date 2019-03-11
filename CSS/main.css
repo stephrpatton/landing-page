@@ -1,0 +1,380 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Overpass Regular'), local('Overpass-Regular'), url(https://fonts.gstatic.com/s/overpass/v3/qFdH35WCmI96Ajtm81GlU94.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Overpass SemiBold'), local('Overpass-SemiBold'), url(https://fonts.gstatic.com/s/overpass/v3/qFdA35WCmI96Ajtm81l6d87N4h8.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Overpass", sans-serif;
+}
+body {
+  background: #dfd9d9;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 18rem;
+}
+section {
+  margin-bottom: 15rem;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  padding: 0.8rem 1rem;
+}
+nav .logo {
+  font-size: 1.8rem;
+  padding-top: 0.8rem;
+  font-weight: 800;
+}
+nav .menu-btn {
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  color: #f78221;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+}
+nav .menu-btn:hover {
+  background: #f78221;
+  color: #fff;
+}
+.menu-hidden {
+  display: none;
+}
+header {
+  background: linear-gradient(rgba(247, 130, 33, 0.45), rgba(247, 130, 33, 0.45), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/header.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 100vw;
+  height: 100vh;
+}
+header::after {
+  content: "";
+  width: 100%;
+  height: 40%;
+  bottom: -150px;
+  position: absolute;
+  background: #dfd9d9;
+  transform: 100% 100%;
+  clip-path: polygon(0 0, 100% 100%, 0 100%, 0 100%);
+}
+header::before {
+  content: "";
+  width: 100%;
+  height: 40%;
+  bottom: -150px;
+  position: absolute;
+  background: #f78221;
+  transform: 100% 100%;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+}
+.header_main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 15rem;
+  color: #fff;
+}
+.header_main--container {
+  padding: 1rem;
+}
+.header_main--container h1 {
+  padding-bottom: 2rem;
+  font-weight: 800;
+}
+.header_main--container p {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  font-weight: 300;
+}
+.header_main--container .btn {
+  width: 30%;
+  background: #fff;
+  text-align: center;
+  color: #f78221;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  margin-left: 20rem;
+}
+.header_main--container .btn:hover {
+  background: #f78221;
+  color: #fff;
+}
+.mission {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.mission .section-title {
+  border-top: #f78221 solid 1px;
+  padding-top: 5rem;
+  padding: 6rem 0 3rem 0;
+}
+.mission p:last-child {
+  border-bottom: #f78221 solid 1px;
+  padding-bottom: 3rem;
+  padding-bottom: 6rem;
+}
+.mission .mission-main {
+  align-self: flex-end;
+}
+.mission .mission-img {
+  width: 30%;
+  height: 30%;
+  margin-top: 2rem;
+}
+.mission .mission-img img {
+  border-radius: 5px;
+}
+.main-services {
+  background: #fff;
+  border-bottom: #f78221 solid 1px;
+  padding-bottom: 3px;
+  border-top: #f78221 solid 1px;
+  padding-top: 3px;
+}
+.main-services .section-title {
+  text-align: center;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+}
+.main-services .services-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  color: #fff;
+  padding-bottom: 1.5rem;
+}
+.main-services .services-container .service-1,
+.main-services .services-container .service-2 {
+  border-right: solid #f78221 1px;
+}
+.main-services .services-container .service {
+  color: #000;
+  padding: 2rem;
+  width: 33.3%;
+  font-size: 1.5rem;
+}
+.main-services .services-container .service h3 {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+.main-services .services-container .service p {
+  line-height: 2;
+}
+.main-services .services-container .icon-service i {
+  color: #fff;
+  background: #f78221;
+  border-radius: 50%;
+  margin-left: 15rem;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  padding: 2rem;
+}
+.section-title {
+  font-weight: 600;
+  color: #f78221;
+}
+.feature img {
+  width: 30%;
+  height: 30%;
+}
