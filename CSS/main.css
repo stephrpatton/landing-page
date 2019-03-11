@@ -186,6 +186,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+li {
+  list-style: none;
+}
 p {
   line-height: 1.5;
   font-size: 1.6rem;
@@ -234,7 +237,7 @@ nav .menu-btn:hover {
   display: none;
 }
 header {
-  background: linear-gradient(rgba(247, 130, 33, 0.45), rgba(247, 130, 33, 0.45), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/header.jpg");
+  background: linear-gradient(rgba(247, 130, 33, 0.35), rgba(247, 130, 33, 0.35), rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/header.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -334,8 +337,7 @@ header::before {
 }
 .main-services .section-title {
   text-align: center;
-  padding-bottom: 5rem;
-  padding-top: 2rem;
+  padding: 5rem 0;
 }
 .main-services .services-container {
   display: flex;
@@ -374,7 +376,81 @@ header::before {
   font-weight: 600;
   color: #f78221;
 }
-.feature img {
-  width: 30%;
-  height: 30%;
+.feature .testimonial-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem;
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+.feature .content-img {
+  max-width: 20%;
+  height: 20%;
+}
+.feature .content-img img {
+  border-radius: 50%;
+}
+.sign-up {
+  color: #fff;
+  margin-top: 25rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  position: relative;
+}
+.sign-up::after {
+  content: "";
+  width: 100%;
+  height: 200%;
+  bottom: 0;
+  position: absolute;
+  background: #f78221;
+  transform: 100% 100%;
+  clip-path: polygon(0 0, 100% 100%, 0 100%, 0 100%);
+  z-index: -1;
+}
+.sign-up::before {
+  content: "";
+  width: 100%;
+  height: 200%;
+  bottom: 0;
+  position: absolute;
+  background: #f78221;
+  transform: 100% 100%;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+  z-index: -1;
+}
+.sign-up p {
+  padding: 2rem 0;
+}
+.sign-up .section-title {
+  color: #fff;
+  padding: 2rem 0;
+}
+.sign-up .sign-up_button {
+  padding: 1rem;
+}
+.sign-up .sign-up_button .btn {
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  color: #000;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+}
+.sign-up .sign-up_button .btn:hover {
+  background: #000;
+  color: #fff;
+}
+footer {
+  background: #fff;
+  padding: 5rem;
 }
