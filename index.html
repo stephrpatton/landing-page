@@ -5,19 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./CSS/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
 
     <title>International Rural School Report</title>
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav>
-        <!-- <h4 class="logo">IRSR</h4> -->
         <ul>
           <li class="menu-btn btn"><a href="#">Menu</a></li>
           <ul class="menu menu-hidden">
@@ -67,7 +61,7 @@
         <div class="services-container">
           <div class="service service-1">
             <span class="icon-service">
-              <i class="fas fa-marker"></i>
+              <ion-icon name="create"></ion-icon>
             </span>
             <h3>Create</h3>
             <p>
@@ -78,7 +72,7 @@
           </div>
           <div class="service service-2">
             <span class="icon-service">
-              <i class="fas fa-search"></i>
+              <ion-icon name="search"></ion-icon>
             </span>
             <h3>Investigate</h3>
             <p>
@@ -89,7 +83,7 @@
           </div>
           <div class="service service-3">
             <span class="icon-service">
-              <i class="fas fa-check-circle"></i>
+              <ion-icon name="checkbox-outline"></ion-icon>
             </span>
             <h3>Resolve</h3>
             <p>
@@ -108,21 +102,26 @@
                 <img src="../img/feature-1.jpg" alt="" />
                 <figcaption class="content-img_caption">Mary Jane</figcaption>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
-                architecto.
-              </p>
+              <div class="content-text">
+                <h4>This has saved us so many times!</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Rerum, architecto.
+                </p>
+              </div>
             </div>
-
             <div class="testimonial-content">
               <div class="content-img">
                 <img src="../img/feature-1.jpg" alt="" />
                 <figcaption class="content-img_caption">John Doe</figcaption>
               </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
-                architecto.
-              </p>
+              <div class="content-text">
+                <h4>This has saved us so many times!</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Rerum, architecto.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -141,13 +140,14 @@
       </section>
     </div>
     <footer>
-      <h4>International Rural School Report</h4>
+      <h4><a href="#home">International Rural School Report</a></h4>
       <nav>
         <li><a href="#">Sign In</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-      </ul>
       </nav>
+
+      <p>copyright</p>
     </footer>
   </body>
 </html>
