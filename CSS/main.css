@@ -344,7 +344,7 @@ header::before {
   justify-content: space-between;
   align-content: center;
   color: #fff;
-  padding-bottom: 1.5rem;
+  padding: 3rem 0;
 }
 .main-services .services-container .service-1,
 .main-services .services-container .service-2 {
@@ -358,7 +358,7 @@ header::before {
 }
 .main-services .services-container .service h3 {
   text-align: center;
-  padding: 2.5rem 0;
+  padding: 1rem 0 2.5rem 0;
 }
 .main-services .services-container .service p {
   line-height: 2;
@@ -387,34 +387,38 @@ header::before {
   margin-bottom: 5rem;
 }
 .feature .content-img {
-  max-width: 20%;
-  height: 20%;
+  width: 40%;
+  height: 40%;
+  padding-right: 3rem;
+}
+.feature .content-img figcaption {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #f78221;
 }
 .feature .content-img img {
   border-radius: 50%;
 }
+.feature h4 {
+  font-size: 2rem;
+  color: #f78221;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
 .sign-up {
   color: #fff;
-  margin-top: 35rem;
   margin-bottom: 5rem;
+  padding: 10rem;
   display: flex;
   justify-content: space-between;
   align-content: center;
   position: relative;
-}
-.sign-up::after {
-  content: "";
-  width: 100%;
-  height: 250%;
-  bottom: 0;
-  position: absolute;
-  background: linear-gradient(rgba(247, 130, 33, 0.65), rgba(247, 130, 33, 0.65), rgba(247, 130, 33, 0.55), rgba(0, 0, 0, 0.45)), url("../img/sign-up.jpg");
+  background: linear-gradient(rgba(247, 130, 33, 0.45), rgba(247, 130, 33, 0.45), rgba(247, 130, 33, 0.45), rgba(0, 0, 0, 0.45)), url("../img/sign-up.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
   border-radius: 3px;
-  z-index: -1;
 }
 .sign-up p {
   padding: 2rem;
@@ -447,16 +451,19 @@ header::before {
 }
 footer {
   background: #f78221;
-  padding: 2rem;
+  padding-top: 2rem;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
 }
 footer h4 {
   font-size: 2rem;
   margin-top: 2rem;
+}
+footer h4 a:hover {
+  border-bottom: solid #fff;
 }
 footer nav li {
   padding: 2rem;
