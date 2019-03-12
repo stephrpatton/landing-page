@@ -1,0 +1,75 @@
+.sign-up {
+  color: @white;
+  // margin-top: 35rem;
+  margin-bottom: 5rem;
+  padding: 10rem;
+
+  .flex-content(space-between, center);
+  position: relative;
+
+  background: linear-gradient(
+      rgba(@second-color, 0.45),
+      rgba(@second-color, 0.45),
+      rgba(@second-color, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("../img/sign-up.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  border-radius: 3px;
+
+  p {
+    padding: 2rem;
+  }
+
+  .section-title {
+    color: @white;
+    padding: 1.5rem;
+  }
+
+  .sign-up_button {
+    padding: 0 15rem;
+    .btn {
+      .btn-style(100%, @second-color, @white);
+
+      &:hover {
+        border: solid 1px @second-color;
+      }
+    }
+  }
+}
+
+footer {
+  background: @second-color;
+  padding-top: 2rem;
+  color: @white;
+  .flex-content(space-around, center);
+  flex-wrap: wrap;
+
+  h4 {
+    font-size: 2rem;
+    margin-top: 2rem;
+
+    a:hover {
+      border-bottom: solid @white;
+    }
+  }
+
+  nav li {
+    padding: 2rem;
+    font-size: 2rem;
+
+    a:hover {
+      border-bottom: solid @white;
+    }
+  }
+
+  p {
+    text-align: center;
+    justify-self: center;
+    align-self: flex-end;
+    width: 100%;
+  }
+}

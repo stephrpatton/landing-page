@@ -1,0 +1,37 @@
+.flex-content(@justify-content, @align-content) {
+  display: flex;
+  justify-content: @justify-content;
+  align-content: @align-content;
+}
+
+.btn-style(@width, @button-bg, @color,) {
+  width: @width;
+  background: @button-bg;
+  text-align: center;
+  color: @color;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover {
+    background: @color;
+    color: @button-bg;
+  }
+}
+
+.border-thin-bottom(@size) {
+  border-bottom: @second-color solid 1px;
+  padding-bottom: @size;
+}
+
+.border-thin-top(@size) {
+  border-top: @second-color solid 1px;
+  padding-top: @size;
+}
+
+.border-full-all() {
+  border: @white solid 3px;
+}
