@@ -13,6 +13,9 @@
     @media @tablet {
       width: 100%;
     }
+    @media @mobile {
+      flex-direction: column;
+    }
   }
   .content-img {
     width: 40%;
@@ -22,13 +25,20 @@
       width: 80%;
       height: 80%;
     }
+    @media @mobile {
+      width: 70%;
+      height: 70%;
+      margin: 0 auto;
+    }
 
     &_caption {
       text-align: center;
       font-size: 1.5rem;
       color: @second-color;
       padding-top: 0.5rem;
-      cursor: pointer;
+      @media @mobile {
+        margin-bottom: 2rem;
+      }
     }
 
     img {

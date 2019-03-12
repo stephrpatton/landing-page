@@ -219,6 +219,11 @@ section {
     font-size: 4rem;
   }
 }
+@media (max-width: 800px) {
+  .section-title {
+    font-size: 3rem;
+  }
+}
 nav {
   display: flex;
   justify-content: flex-end;
@@ -233,7 +238,7 @@ nav .menu {
   text-align: center;
   position: absolute;
   top: 50px;
-  right: 45px;
+  right: 9px;
   display: none;
   z-index: 1;
 }
@@ -265,6 +270,11 @@ nav #menu-btn:hover {
 }
 nav .main-menu {
   padding-right: 5rem;
+}
+@media (max-width: 500px) {
+  nav .main-menu {
+    padding-right: 1rem;
+  }
 }
 header {
   background: linear-gradient(rgba(247, 130, 33, 0.35), rgba(247, 130, 33, 0.35), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../img/header.jpg");
@@ -312,12 +322,22 @@ header::before {
   text-shadow: #000 3px 1px 5px;
   font-size: 5rem;
 }
+@media (max-width: 500px) {
+  .header_main--container .header-title {
+    padding-bottom: 5rem;
+  }
+}
 .header_main--container p {
   text-align: center;
   padding-bottom: 3rem;
   font-weight: 300;
   font-size: 2rem;
   text-shadow: #000 3px 1px 5px;
+}
+@media (max-width: 500px) {
+  .header_main--container p {
+    padding-bottom: 5rem;
+  }
 }
 .header_main--container .btn {
   width: 30%;
@@ -367,6 +387,12 @@ header::before {
     width: 60%;
   }
 }
+@media (max-width: 500px) {
+  .mission .mission-main {
+    width: 100%;
+    text-align: center;
+  }
+}
 .mission .mission-img {
   width: 30%;
   height: 30%;
@@ -377,6 +403,11 @@ header::before {
     width: 40%;
     height: 40%;
     margin-top: 10rem;
+  }
+}
+@media (max-width: 500px) {
+  .mission .mission-img {
+    display: none;
   }
 }
 .mission .mission-img img:nth-of-type(2) {
@@ -466,6 +497,11 @@ header::before {
     flex-direction: column;
   }
 }
+@media (max-width: 500px) {
+  .main-services .services-container {
+    padding: 2rem 0;
+  }
+}
 .main-services .services-container .service-1,
 .main-services .services-container .service-2 {
   border-right: solid #f78221 1px;
@@ -483,19 +519,34 @@ header::before {
   color: #000;
   padding: 2rem;
   width: 33.3%;
-  font-size: 1.5rem;
 }
 @media (max-width: 800px) {
   .main-services .services-container .service {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .main-services .services-container .service {
+    font-size: 1rem;
+  }
+}
 .main-services .services-container .service h3 {
   text-align: center;
   padding: 1rem 0 2.5rem 0;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .main-services .services-container .service h3 {
+    font-size: 2.8rem;
+  }
 }
 .main-services .services-container .service p {
   line-height: 2;
+}
+@media (max-width: 500px) {
+  .main-services .services-container .service p {
+    font-size: 1.5rem;
+  }
 }
 .main-services .services-container .icon {
   width: 50%;
@@ -509,6 +560,11 @@ header::before {
     margin-bottom: 2.5rem;
     width: 40%;
     height: 40%;
+  }
+}
+@media (max-width: 500px) {
+  .main-services .services-container .icon {
+    margin-left: 13rem;
   }
 }
 .testimonial .testimonial-content {
@@ -532,6 +588,11 @@ header::before {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .testimonial .testimonial-content {
+    flex-direction: column;
+  }
+}
 .testimonial .content-img {
   width: 40%;
   height: 40%;
@@ -543,12 +604,23 @@ header::before {
     height: 80%;
   }
 }
+@media (max-width: 500px) {
+  .testimonial .content-img {
+    width: 70%;
+    height: 70%;
+    margin: 0 auto;
+  }
+}
 .testimonial .content-img_caption {
   text-align: center;
   font-size: 1.5rem;
   color: #f78221;
   padding-top: 0.5rem;
-  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .testimonial .content-img_caption {
+    margin-bottom: 2rem;
+  }
 }
 .testimonial .content-img img {
   border-radius: 50%;
@@ -591,6 +663,7 @@ header::before {
 .sign-up .section-title {
   color: #fff;
   padding: 1.5rem;
+  font-size: 2.5rem;
 }
 .sign-up .sign-up_main {
   width: 60%;
@@ -605,6 +678,13 @@ header::before {
   width: 40%;
 }
 @media (max-width: 800px) {
+  .sign-up .sign-up_button {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
   .sign-up .sign-up_button {
     width: 100%;
   }
