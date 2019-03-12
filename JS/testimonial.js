@@ -1,8 +1,12 @@
-class Person {
-  constructor(element) {
-    this.element = element;
-    this.name = name;
-    this.title = title;
-    this.img = img;
-  }
-}
+const testPicture = document.querySelectorAll(".content-img_caption");
+const contentTest = document.querySelectorAll(".content-text");
+
+testPicture.forEach(function(pic) {
+  pic.addEventListener("click", () => {
+    if (contentTest.style.display === "none") {
+      contentTest.style.display = "block";
+    } else {
+      contentTest.style.display = "none";
+    }
+  });
+});

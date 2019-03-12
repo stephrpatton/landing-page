@@ -18,6 +18,9 @@
   background-size: cover;
   background-position: left;
   border-radius: 3px;
+  @media @tablet {
+    flex-direction: column;
+  }
 
   p {
     padding: 2rem;
@@ -30,11 +33,17 @@
 
   .sign-up_main {
     width: 60%;
+    @media @tablet {
+      width: 100%;
+    }
   }
 
   .sign-up_button {
     padding: 0 15rem;
     width: 40%;
+    @media @tablet {
+      width: 100%;
+    }
 
     .btn {
       .btn-style(100%, @second-color, @white);

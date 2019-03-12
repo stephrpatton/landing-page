@@ -11,9 +11,18 @@
     .flex-content(space-between, center);
     color: @white;
     padding: 3rem 0;
+    @media @tablet {
+      flex-direction: column;
+    }
+
     .service-1,
     .service-2 {
       border-right: solid @second-color 1px;
+      @media @tablet {
+        width: 100%;
+        border-right: none;
+        .border-thin-bottom(0);
+      }
     }
 
     .service {
@@ -21,6 +30,9 @@
       padding: 2rem;
       width: 33.3%;
       font-size: 1.5rem;
+      @media @tablet {
+        width: 100%;
+      }
       h3 {
         text-align: center;
         padding: 1rem 0 2.5rem 0;
@@ -36,6 +48,12 @@
       height: 50%;
       margin-left: 10rem;
       margin-bottom: 1rem;
+      @media @tablet {
+        margin-left: 19rem;
+        margin-bottom: 2.5rem;
+        width: 40%;
+        height: 40%;
+      }
     }
   }
 }

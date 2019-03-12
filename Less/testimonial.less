@@ -1,4 +1,4 @@
-.feature {
+.testimonial {
   .testimonial-content {
     .flex-content(center, center);
     box-shadow: @white 1px 3px 100px;
@@ -8,23 +8,34 @@
     margin: 0 auto;
     margin-bottom: 5rem;
     border-radius: 3px;
-    .border-thin-bottom(2rem);
-    .border-thin-top(2rem);
+    .border-thin-bottom(3rem);
+    .border-thin-top(3rem);
+    @media @tablet {
+      width: 100%;
+    }
   }
   .content-img {
     width: 40%;
     height: 40%;
     padding-right: 3rem;
+    @media @tablet {
+      width: 80%;
+      height: 80%;
+    }
 
-    figcaption {
+    &_caption {
       text-align: center;
       font-size: 1.5rem;
       color: @second-color;
       padding-top: 0.5rem;
+      cursor: pointer;
     }
 
     img {
       border-radius: 50%;
+      @media @tablet {
+        border-radius: 30%;
+      }
     }
   }
 

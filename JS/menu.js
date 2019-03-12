@@ -7,24 +7,19 @@ class Menu {
     this.button.addEventListener("click", () => {
       this.toggleMenu();
     });
-    window.addEventListener("click", () => {
-      this.removeMenu();
-    });
   }
 
   toggleMenu() {
-    this.menuContent.classList.toggle("menu-hidden");
-    TweenMax.to(
-      this.menuContent,
-      2,
-      { ease: Bounce.easeOut, y: 20 },
-      { opacity: 0 }
-    );
-  }
-
-  removeMenu() {
-    if (this.menuContent.classList.contains("menu-hidden")) {
-      this.menuContent.classList.add("menu-hidden");
+    if (this.menuContent.style.display === "none") {
+      this.menuContent.style.display = "block";
+      TweenMax.to(this.menuContent, 1, { opacity: 1 });
+      TweenMax.to(this.menuContent, 0.5, { ease: Bounce.easeOut, y: 30 });
+    } else {
+      TweenMax.to(this.menuContent, 0.5, { opacity: 0 });
+      TweenMax.to(this.menuContent, 0.5, {
+        y: -30
+      });
+      TweenMax.to(this.menuContent, 1, { display: "none" });
     }
   }
 }
