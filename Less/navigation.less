@@ -1,17 +1,31 @@
 nav {
   .flex-content(flex-end, center);
-  //   background: @main-color;
   padding: 0.8rem 1rem;
-  // position: fixed;
 
-  .logo {
-    font-size: 1.8rem;
-    padding-top: 0.8rem;
-    font-weight: 800;
+  .menu {
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: @second-color;
+    background: @white;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    right: 45px;
+    li {
+      padding: 2rem;
+
+      &:hover {
+        background: @second-color;
+        color: @white;
+      }
+    }
   }
-
-  .menu-btn {
+  #menu-btn {
     .btn-style(100%, @white, @second-color);
+    font-weight: 600;
+  }
+  .main-menu {
+    padding-right: 5rem;
   }
 }
 

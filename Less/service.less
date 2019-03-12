@@ -1,0 +1,41 @@
+.main-services {
+  background: @white;
+  box-shadow: @white 1px 3px 60px;
+  .border-thin-bottom(3px);
+  .border-thin-top(3px);
+  .section-title {
+    text-align: center;
+    padding: 5rem 0;
+  }
+  .services-container {
+    .flex-content(space-between, center);
+    color: @white;
+    padding: 3rem 0;
+    .service-1,
+    .service-2 {
+      border-right: solid @second-color 1px;
+    }
+
+    .service {
+      color: @black;
+      padding: 2rem;
+      width: 33.3%;
+      font-size: 1.5rem;
+      h3 {
+        text-align: center;
+        padding: 1rem 0 2.5rem 0;
+      }
+
+      p {
+        line-height: 2;
+      }
+    }
+
+    .icon {
+      width: 50%;
+      height: 50%;
+      margin-left: 10rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

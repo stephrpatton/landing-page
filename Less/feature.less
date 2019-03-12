@@ -1,15 +1,15 @@
 .feature {
-  //   border-right: @second-color 2px solid;
-  //   border-left: @second-color 2px solid;
-
   .testimonial-content {
     .flex-content(center, center);
+    box-shadow: @white 1px 3px 100px;
     padding: 2rem;
     background: @white;
-    // transform: skewX(-12deg);
     width: 80%;
     margin: 0 auto;
     margin-bottom: 5rem;
+    border-radius: 3px;
+    .border-thin-bottom(2rem);
+    .border-thin-top(2rem);
   }
   .content-img {
     width: 40%;
@@ -20,6 +20,7 @@
       text-align: center;
       font-size: 1.5rem;
       color: @second-color;
+      padding-top: 0.5rem;
     }
 
     img {
