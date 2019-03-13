@@ -5,31 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./CSS/main.css" />
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script defer="defer" src="./JS/menu.js"></script>
+    <script defer="defer" src="./JS/animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
 
     <title>International Rural School Report</title>
   </head>
   <body>
     <header id="home">
       <nav>
-        <ul>
-          <li class="menu-btn btn"><a href="#">Menu</a></li>
-          <ul class="menu menu-hidden">
+        <ul class="main-menu">
+          <button id="menu-btn" class="btn">Menu</button>
+          <div class="menu menu-hidden">
             <li><a href="#">Sign In</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="#">Contact</a></li>
-          </ul>
+          </div>
         </ul>
       </nav>
 
       <div class="header_main">
         <div class="header_main--container">
-          <h1>International Rural School Report</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-            vero.
+          <h1 class="header-title">International Rural School Report</h1>
+          <p class="header-content">
+            Helping at-need schools educate the next generation by giving them
+            an international voice.
           </p>
-          <button class="btn">Sign In</button>
+          <button class="header-btn btn">Sign In</button>
         </div>
       </div>
     </header>
@@ -53,6 +57,7 @@
         </div>
         <div class="mission-img">
           <img src="../img/mission.jpg" alt="" />
+          <img src="../img/mission2.jpg" alt="" />
         </div>
       </section>
       <section class="main-services">
@@ -60,9 +65,8 @@
 
         <div class="services-container">
           <div class="service service-1">
-            <span class="icon-service">
-              <ion-icon name="create"></ion-icon>
-            </span>
+            <!-- <ion-icon name="create"></ion-icon> -->
+            <img src="../img/create.svg" alt="" class="icon" />
             <h3>Create</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -71,9 +75,8 @@
             </p>
           </div>
           <div class="service service-2">
-            <span class="icon-service">
-              <ion-icon name="search"></ion-icon>
-            </span>
+            <!-- <ion-icon name="search"></ion-icon> -->
+            <img src="../img/search.svg" alt="" class="icon" />
             <h3>Investigate</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -82,9 +85,8 @@
             </p>
           </div>
           <div class="service service-3">
-            <span class="icon-service">
-              <ion-icon name="checkbox-outline"></ion-icon>
-            </span>
+            <!-- <ion-icon name="checkbox-outline"></ion-icon> -->
+            <img src="../img/solve.svg" alt="" class="icon" />
             <h3>Resolve</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -94,8 +96,8 @@
           </div>
         </div>
       </section>
-      <section class="feature">
-        <div class="testimonial">
+      <section class="testimonial">
+        <div class="testimonial-container">
           <div class="testimonial-content">
             <div class="content-img">
               <img src="../img/feature-1.jpg" alt="" />
@@ -145,11 +147,11 @@
       <h4><a href="#home">International Rural School Report</a></h4>
       <nav>
         <li><a href="#">Sign In</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#">Contact</a></li>
       </nav>
 
-      <p>&copy;2019</p>
+      <p>&copy;2019 - All Rights Reserved</p>
     </footer>
   </body>
 </html>

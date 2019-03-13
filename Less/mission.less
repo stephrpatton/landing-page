@@ -1,0 +1,59 @@
+.mission {
+  .flex-content(space-around, center);
+
+  .section-title {
+    .border-thin-top(5rem);
+    padding-bottom: 3rem;
+    .text-shadow(@white);
+    @media @tablet {
+      padding-bottom: 4rem;
+      padding-top: 6rem;
+    }
+  }
+
+  p:last-child {
+    .border-thin-bottom(3rem);
+    padding-bottom: 6rem;
+  }
+
+  .mission-main {
+    align-self: flex-end;
+    @media @tablet {
+      width: 60%;
+    }
+    @media @mobile {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .mission-img {
+    width: 30%;
+    height: 30%;
+    margin-top: 2rem;
+    @media @tablet {
+      width: 40%;
+      height: 40%;
+      margin-top: 10rem;
+    }
+    @media @mobile {
+      display: none;
+    }
+    img:nth-of-type(2) {
+      display: none;
+      @media @tablet {
+        display: block;
+      }
+    }
+
+    img {
+      border-radius: 5px;
+      @media @tablet {
+        width: 100%;
+        height: 100%;
+        margin-left: 2rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

@@ -11,10 +11,12 @@
   color: @color;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
   text-transform: uppercase;
   border: none;
+  outline: none;
+  font-weight: 700;
 
   &:hover {
     background: @color;
@@ -34,4 +36,8 @@
 
 .border-full-all() {
   border: @white solid 3px;
+}
+
+.text-shadow(@color) {
+  text-shadow: @color 3px 1px 5px;
 }

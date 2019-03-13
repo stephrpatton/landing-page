@@ -1,11 +1,11 @@
-header {
+.about-header {
   background: linear-gradient(
       rgba(@second-color, 0.35),
       rgba(@second-color, 0.35),
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
     ),
-    url("../img/header.jpg");
+    url("../img/about-us.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,41 +34,21 @@ header {
     transform: 100% 100%;
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
   }
-}
 
-.header_main {
-  .flex-content(center, center);
-  padding-top: 15rem;
-  color: @white;
-  text-align: center;
+  nav {
+    .flex-content(space-between, center);
 
-  &--container {
-    padding: 1rem;
-
-    .header-title {
-      padding-bottom: 3rem;
-      font-weight: 800;
-      .text-shadow(@black);
-      font-size: 5rem;
-      @media @mobile {
-        padding-bottom: 5rem;
-      }
-    }
-
-    p {
-      text-align: center;
-      padding-bottom: 3rem;
-      font-weight: 300;
-      font-size: 2rem;
-      text-shadow: @black 3px 1px 5px;
-      @media @mobile {
-        padding-bottom: 5rem;
-      }
-    }
-
-    .btn {
-      .btn-style(30%, @white, @second-color);
-      // margin-left: 20rem;
+    h4 {
+      color: @white;
     }
   }
+}
+
+.about-title {
+  font-size: 5rem;
+  .text-shadow(@black);
+}
+
+.about-us h2 {
+  text-align: center;
 }
