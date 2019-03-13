@@ -14,10 +14,12 @@ headBtn.addEventListener("mouseover", function() {
 
 //Mission
 
-const missionImg = document.querySelector(".mission-img img");
+const missionImg = document.querySelectorAll(".mission-img img");
 
-TweenMax.from(missionImg, 3, { delay: 2.5, opacity: 0 });
-TweenMax.from(missionImg, 3, { delay: 2.5, x: 100 });
+missionImg.forEach(function(img) {
+  TweenMax.from(img, 3, { delay: 2.5, opacity: 0 });
+  TweenMax.from(img, 3, { delay: 2.5, x: 100 });
+});
 
 //Feature
 

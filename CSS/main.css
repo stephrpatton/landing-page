@@ -238,9 +238,15 @@ nav .menu {
   text-align: center;
   position: absolute;
   top: 50px;
-  right: 9px;
+  right: 45px;
   display: none;
   z-index: 1;
+}
+@media (max-width: 500px) {
+  nav .menu {
+    top: 50px;
+    right: 9px;
+  }
 }
 nav .menu li {
   padding: 2rem;
@@ -465,13 +471,19 @@ header::before {
 }
 .about-header nav h4 {
   color: #fff;
+  text-shadow: #000 3px 1px 5px;
 }
 .about-title {
   font-size: 5rem;
   text-shadow: #000 3px 1px 5px;
 }
-.about-us h2 {
+.about-us .section-title {
+  margin-bottom: 2rem;
   text-align: center;
+}
+.about-container {
+  background: #fff;
+  border-radius: 5px;
 }
 .main-services {
   background: #fff;
@@ -594,8 +606,8 @@ header::before {
   }
 }
 .testimonial .content-img {
-  width: 40%;
-  height: 40%;
+  width: 250px;
+  height: 150px;
   padding-right: 3rem;
 }
 @media (max-width: 800px) {
@@ -607,7 +619,6 @@ header::before {
 @media (max-width: 500px) {
   .testimonial .content-img {
     width: 70%;
-    height: 70%;
     margin: 0 auto;
   }
 }
