@@ -3,21 +3,22 @@ class Testimonials {
     this.test = test;
     // console.log(test);
     this.testExpand = test.querySelector(".content-header");
+    this.button = test.querySelector(".see-more");
     this.testPara = test.querySelector(".content-para");
     this.testImg = test.querySelector(".content-img");
-    this.testExpand.addEventListener("click", () => this.openTest());
+    this.button.addEventListener("click", () => this.openTest());
     this.test.addEventListener("mouseleave", () => this.closeTest());
   }
 
   openTest() {
     TweenMax.to(this.testPara, 0.5, { opacity: 1 });
-    TweenMax.to(this.testExpand, 0.5, { marginTop: 0 });
+    TweenMax.to(this.button, 0.5, { opacity: 0 });
   }
 
   closeTest() {
     TweenMax.to(this.testPara, 0.5, { opacity: 0 });
-    TweenMax.to(this.testExpand, 0.5, { marginTop: "2rem", delay: 0.5 });
-    // this.stopPropagation();
+
+    TweenMax.to(this.button, 0.5, { opacity: 1 });
   }
 }
 

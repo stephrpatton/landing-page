@@ -242,7 +242,7 @@ nav .menu {
   right: 35px;
   display: none;
   z-index: 1;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 @media (max-width: 500px) {
   nav .menu {
@@ -256,6 +256,9 @@ nav .menu li {
 nav .menu li:hover {
   background: #f78221;
   color: #fff;
+}
+nav .menu li a {
+  width: 100%;
 }
 nav #menu-btn {
   width: 100%;
@@ -708,12 +711,19 @@ header::before {
   color: #f78221;
   padding-bottom: 1rem;
   font-weight: 600;
-  cursor: pointer;
   margin-top: 2rem;
-}
-.testimonial .content-header:hover {
-  color: #000;
   transition: color 0.5s;
+}
+.see-more {
+  width: 70%;
+  margin: 0 auto;
+  text-decoration: #000 underline solid;
+  cursor: pointer;
+}
+.see-more:hover {
+  color: #f78221;
+  text-decoration: #f78221 underline solid;
+  transition: all 0.5;
 }
 .sign-up {
   color: #fff;

@@ -61,12 +61,20 @@
     color: @second-color;
     padding-bottom: 1rem;
     font-weight: 600;
-    cursor: pointer;
     margin-top: 2rem;
+    transition: color 0.5s;
+  }
+}
 
-    &:hover {
-      color: @black;
-      transition: color 0.5s;
-    }
+.see-more {
+  width: 70%;
+  margin: 0 auto;
+  text-decoration: @black underline solid;
+  cursor: pointer;
+
+  &:hover {
+    color: @second-color;
+    text-decoration: @second-color underline solid;
+    transition: all 0.5;
   }
 }
