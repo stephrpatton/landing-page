@@ -242,6 +242,7 @@ nav .menu {
   right: 35px;
   display: none;
   z-index: 1;
+  transition: all 0.5s;
 }
 @media (max-width: 500px) {
   nav .menu {
@@ -270,6 +271,7 @@ nav #menu-btn {
   outline: none;
   font-weight: 700;
   font-weight: 600;
+  transition: all 0.5s;
 }
 nav #menu-btn:hover {
   background: #f78221;
@@ -362,6 +364,7 @@ header::before {
   border: none;
   outline: none;
   font-weight: 700;
+  transition: all 0.5s;
 }
 .header_main--container .btn:hover {
   background: #f78221;
@@ -494,6 +497,8 @@ header::before {
 .about-us-pic {
   border-radius: 10px;
   width: 300px;
+  padding-bottom: 2rem;
+  transition: all 0.2s;
 }
 .about-us-content {
   width: 30%;
@@ -514,6 +519,7 @@ header::before {
 .about-us-name {
   font-size: 2.8rem;
   color: #f78221;
+  transition: all 0.2s;
 }
 .about-us-title {
   font-size: 2rem;
@@ -634,7 +640,6 @@ header::before {
   align-content: center;
   box-shadow: #fff 1px 3px 100px;
   padding: 2rem;
-  background: #fff;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 5rem;
@@ -644,20 +649,25 @@ header::before {
   border-top: #f78221 solid 1px;
   padding-top: 3rem;
 }
+.testimonial .testimonial-content:hover {
+  background: #fff;
+  transition: background 0.5s;
+}
 @media (max-width: 800px) {
   .testimonial .testimonial-content {
     width: 100%;
+    background: #fff;
   }
 }
 @media (max-width: 500px) {
   .testimonial .testimonial-content {
     flex-direction: column;
+    background: #fff;
   }
 }
 .testimonial .content-img {
   width: 250px;
   padding-right: 3rem;
-  transition: all 0.5s;
 }
 @media (max-width: 800px) {
   .testimonial .content-img {
@@ -699,10 +709,11 @@ header::before {
   padding-bottom: 1rem;
   font-weight: 600;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .testimonial .content-header:hover {
   color: #000;
+  transition: color 0.5s;
 }
 .sign-up {
   color: #fff;
@@ -775,6 +786,7 @@ header::before {
   border: none;
   outline: none;
   font-weight: 700;
+  transition: all 0.5s;
 }
 .sign-up .sign-up_button .btn:hover {
   background: #fff;

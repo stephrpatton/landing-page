@@ -35,7 +35,5 @@ const testContent = document.querySelectorAll(".testimonial-content");
 
 testContent.forEach(function(content) {
   TweenMax.from(content, 2, { delay: 4.5, opacity: 0 });
-  TweenMax.from(content, 2, { delay: 4.5, y: -40 });
+  TweenMax.from(content, 2, { delay: 4.5, y: -30 });
 });
-
-const testPic = document.querySelectorAll(".content-img_caption");

@@ -3,24 +3,28 @@
     .flex-content(center, center);
     box-shadow: @white 1px 3px 100px;
     padding: 2rem;
-    background: @white;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 5rem;
     border-radius: 3px;
     .border-thin-bottom(3rem);
     .border-thin-top(3rem);
+    &:hover {
+      background: @white;
+      transition: background 0.5s;
+    }
     @media @tablet {
       width: 100%;
+      background: @white;
     }
     @media @mobile {
       flex-direction: column;
+      background: @white;
     }
   }
   .content-img {
     width: 250px;
     padding-right: 3rem;
-    transition: all 0.5s;
     @media @tablet {
       width: 80%;
       height: 80%;
@@ -58,10 +62,11 @@
     padding-bottom: 1rem;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 2rem;
 
     &:hover {
       color: @black;
+      transition: color 0.5s;
     }
   }
 }
