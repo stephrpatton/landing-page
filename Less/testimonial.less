@@ -3,23 +3,27 @@
     .flex-content(center, center);
     box-shadow: @white 1px 3px 100px;
     padding: 2rem;
-    background: @white;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 5rem;
     border-radius: 3px;
     .border-thin-bottom(3rem);
     .border-thin-top(3rem);
+    &:hover {
+      background: @white;
+      transition: background 0.5s;
+    }
     @media @tablet {
       width: 100%;
+      background: @white;
     }
     @media @mobile {
       flex-direction: column;
+      background: @white;
     }
   }
   .content-img {
-    width: 40%;
-    height: 40%;
+    width: 250px;
     padding-right: 3rem;
     @media @tablet {
       width: 80%;
@@ -27,7 +31,6 @@
     }
     @media @mobile {
       width: 70%;
-      height: 70%;
       margin: 0 auto;
     }
 
@@ -49,10 +52,29 @@
     }
   }
 
-  h4 {
+  .content-para {
+    opacity: 0;
+  }
+
+  .content-header {
     font-size: 2rem;
     color: @second-color;
     padding-bottom: 1rem;
     font-weight: 600;
+    margin-top: 2rem;
+    transition: color 0.5s;
+  }
+}
+
+.see-more {
+  width: 70%;
+  margin: 0 auto;
+  text-decoration: @black underline solid;
+  cursor: pointer;
+
+  &:hover {
+    color: @second-color;
+    text-decoration: @second-color underline solid;
+    transition: all 0.5;
   }
 }

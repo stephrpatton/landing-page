@@ -14,10 +14,12 @@ headBtn.addEventListener("mouseover", function() {
 
 //Mission
 
-const missionImg = document.querySelector(".mission-img img");
+const missionImg = document.querySelectorAll(".mission-img img");
 
-TweenMax.from(missionImg, 3, { delay: 2.5, opacity: 0 });
-TweenMax.from(missionImg, 3, { delay: 2.5, x: 100 });
+missionImg.forEach(function(img) {
+  TweenMax.from(img, 3, { delay: 2.5, opacity: 0 });
+  TweenMax.from(img, 3, { delay: 2.5, x: 100 });
+});
 
 //Feature
 
@@ -32,8 +34,6 @@ icons.forEach(function(icon) {
 const testContent = document.querySelectorAll(".testimonial-content");
 
 testContent.forEach(function(content) {
-  TweenMax.from(content, 2, { delay: 4, opacity: 0 });
-  TweenMax.from(content, 2, { delay: 4, y: -30 });
+  TweenMax.from(content, 2, { delay: 5, opacity: 0 });
+  TweenMax.from(content, 2, { delay: 5, y: -30 });
 });
-
-const testPic = document.querySelectorAll(".content-img_caption");

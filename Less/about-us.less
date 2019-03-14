@@ -40,6 +40,11 @@
 
     h4 {
       color: @white;
+      .text-shadow(@black);
+      @media @mobile {
+        font-size: 2rem;
+        padding-top: 1rem;
+      }
     }
   }
 }
@@ -49,6 +54,57 @@
   .text-shadow(@black);
 }
 
-.about-us h2 {
-  text-align: center;
+.about-us {
+  .section-title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &-pic {
+    border-radius: 10px;
+    width: 300px;
+    padding-bottom: 2rem;
+    transition: all 0.2s;
+  }
+
+  &-content {
+    width: 30%;
+    padding-bottom: 5rem;
+    text-align: center;
+    @media @tablet {
+      width: 50%;
+      padding-right: 3rem;
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
+  }
+
+  &-name {
+    font-size: 2.8rem;
+    color: @second-color;
+    transition: all 0.2s;
+  }
+
+  &-title {
+    font-size: 2rem;
+  }
+
+  .links a {
+    font-size: 1.5rem;
+
+    &:hover {
+      color: @second-color;
+    }
+  }
+}
+
+.about-container {
+  background: @white;
+  border-radius: 5px;
+  .flex-content(space-around, center);
+  flex-wrap: wrap;
+  padding: 5rem 8rem;
+  box-shadow: @white 20px 10px 200px;
 }

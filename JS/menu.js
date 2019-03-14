@@ -7,12 +7,15 @@ class Menu {
     this.button.addEventListener("click", () => {
       this.toggleMenu();
     });
+    this.menuContent.addEventListener("mouseleave", () => {
+      this.disappear();
+    });
   }
 
   toggleMenu() {
     if (this.menuContent.style.display === "none") {
       this.menuContent.style.display = "block";
-      TweenMax.to(this.menuContent, 1, { opacity: 1 });
+      TweenMax.to(this.menuContent, 0.5, { opacity: 1 });
       TweenMax.to(this.menuContent, 0.5, { ease: Bounce.easeOut, y: 30 });
     } else {
       TweenMax.to(this.menuContent, 0.5, { opacity: 0 });
@@ -21,6 +24,10 @@ class Menu {
       });
       TweenMax.to(this.menuContent, 1, { display: "none" });
     }
+  }
+
+  disappear() {
+    TweenMax.to(this.menuContent, 0.5, { display: "none" });
   }
 }
 
