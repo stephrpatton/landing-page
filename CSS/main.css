@@ -676,6 +676,11 @@ header::before {
   border-radius: 3px;
   box-shadow: #fff 1px 3px 60px;
 }
+@media (max-width: 800px) {
+  .testimonial {
+    padding-bottom: 2rem;
+  }
+}
 .testimonial .section-title {
   margin-left: 48rem;
   padding-bottom: 3rem;
@@ -686,6 +691,11 @@ header::before {
   .testimonial .section-title {
     text-align: center;
     margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .testimonial .section-title {
+    padding-bottom: 3rem;
   }
 }
 .testimonial .testimonial-content {
