@@ -6,6 +6,13 @@
       rgba(0, 0, 0, 0.55)
     ),
     url("../img/about-us.jpg");
+  -webkit-background: linear-gradient(
+      rgba(@second-color, 0.35),
+      rgba(@second-color, 0.35),
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("../img/about-us.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,6 +29,7 @@
     background: @main-color;
     transform: 100% 100%;
     clip-path: polygon(0 0, 100% 100%, 0 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 100%, 0 100%, 0 100%);
   }
 
   &::before {
@@ -33,6 +41,7 @@
     background: @second-color;
     transform: 100% 100%;
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 100%);
   }
 
   nav {
