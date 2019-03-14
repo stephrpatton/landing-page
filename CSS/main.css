@@ -225,6 +225,9 @@ section {
     font-size: 4.9rem;
   }
 }
+.color-orange {
+  color: #f78221;
+}
 nav {
   display: flex;
   justify-content: flex-end;
@@ -339,6 +342,7 @@ header::before {
 }
 @media (max-width: 500px) {
   .header_main--container .header-title {
+    font-size: 5.5rem;
     padding-bottom: 5rem;
   }
 }
@@ -351,6 +355,7 @@ header::before {
 }
 @media (max-width: 500px) {
   .header_main--container p {
+    font-size: 2.5rem;
     padding-bottom: 5rem;
   }
 }
@@ -496,7 +501,7 @@ header::before {
   }
 }
 .about-title {
-  font-size: 5rem;
+  font-size: 6rem;
   text-shadow: #000 3px 1px 5px;
 }
 .about-us .section-title {
@@ -530,6 +535,11 @@ header::before {
   color: #f78221;
   transition: all 0.2s;
 }
+@media (max-width: 500px) {
+  .about-us-name {
+    font-size: 3.2rem;
+  }
+}
 .about-us-title {
   font-size: 2rem;
 }
@@ -560,6 +570,11 @@ header::before {
 .main-services .section-title {
   text-align: center;
   padding: 5rem 0;
+}
+@media (max-width: 500px) {
+  .main-services .section-title {
+    font-size: 4.6rem;
+  }
 }
 .main-services .services-container {
   display: flex;
@@ -617,12 +632,17 @@ header::before {
     font-size: 3rem;
   }
 }
+@media (max-width: 800px) {
+  .main-services .services-container .service h3 {
+    font-size: 3.5rem;
+  }
+}
 .main-services .services-container .service p {
   line-height: 2;
 }
 @media (max-width: 800px) {
   .main-services .services-container .service p {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
 .main-services .services-container .icon {
@@ -641,7 +661,9 @@ header::before {
 }
 @media (max-width: 500px) {
   .main-services .services-container .icon {
-    margin-left: 13rem;
+    margin-left: 7rem;
+    width: 60%;
+    height: 60%;
   }
 }
 .testimonial .section-title {
@@ -677,6 +699,7 @@ header::before {
   .testimonial .testimonial-content {
     width: 100%;
     background: #fff;
+    margin: 0 0 2rem 0;
   }
 }
 @media (max-width: 500px) {
@@ -713,6 +736,7 @@ header::before {
 @media (max-width: 500px) {
   .testimonial .content-img_caption {
     margin-bottom: 2rem;
+    font-weight: 800;
   }
 }
 .testimonial .content-img img {
@@ -730,7 +754,7 @@ header::before {
 @media (max-width: 800px) {
   .testimonial .content-para {
     opacity: 1;
-    height: 100px;
+    height: auto;
     font-size: 1.8rem;
   }
 }
@@ -746,6 +770,8 @@ header::before {
 @media (max-width: 800px) {
   .testimonial .content-header {
     letter-spacing: 0;
+    font-size: 2rem;
+    font-weight: 800;
   }
 }
 .see-more {
@@ -814,7 +840,7 @@ header::before {
   }
 }
 .sign-up .sign-up_main {
-  width: 60%;
+  width: 50%;
 }
 @media (max-width: 800px) {
   .sign-up .sign-up_main {
@@ -823,7 +849,7 @@ header::before {
 }
 .sign-up .sign-up_button {
   padding: 0 15rem;
-  width: 40%;
+  width: 50%;
 }
 @media (max-width: 800px) {
   .sign-up .sign-up_button {
