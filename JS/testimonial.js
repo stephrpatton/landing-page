@@ -16,14 +16,18 @@ class Testimonials {
       TweenMax.to(this.testPara, 0.8, {
         height: "auto",
         opacity: 1,
-        delay: 0.5
+        delay: 0.8
       });
 
       TweenMax.to(this.testImg, 0.8, {
         display: "inline-block",
         paddingRight: "3rem"
       });
-      TweenMax.to(this.test, 0.4, { width: "80%" });
+      TweenMax.to(this.test, 0.4, {
+        width: "100%",
+        paddingTop: "3rem",
+        paddingBottom: "3rem"
+      });
     }
   }
 }

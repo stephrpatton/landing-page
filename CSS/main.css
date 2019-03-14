@@ -214,11 +214,7 @@ section {
 .section-title {
   font-weight: 600;
   color: #f78221;
-}
-@media (max-width: 800px) {
-  .section-title {
-    font-size: 4rem;
-  }
+  font-size: 4rem;
 }
 @media (max-width: 500px) {
   .section-title {
@@ -288,6 +284,7 @@ nav .main-menu {
   position: fixed;
   right: 0;
   z-index: 1;
+  transition: all 0.5s;
 }
 @media (max-width: 500px) {
   nav .main-menu {
@@ -667,7 +664,7 @@ header::before {
   }
 }
 .testimonial .section-title {
-  margin-left: 50rem;
+  margin-left: 48rem;
   padding-bottom: 3rem;
   letter-spacing: 0.2rem;
   text-shadow: #fff 3px 1px 5px;
@@ -697,7 +694,7 @@ header::before {
 }
 @media (max-width: 800px) {
   .testimonial .testimonial-content {
-    width: 100%;
+    width: auto;
     background: #fff;
     margin: 0 0 2rem 0;
   }
