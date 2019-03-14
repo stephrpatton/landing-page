@@ -20,6 +20,7 @@
   border-radius: 3px;
   @media @tablet {
     flex-direction: column;
+    .flex-content(center, center);
   }
   @media @mobile {
     background-position: center;
@@ -27,12 +28,20 @@
 
   p {
     padding: 2rem;
+    font-size: 1.8rem;
+    @media @tablet {
+      padding: 2rem 0;
+    }
   }
 
   .section-title {
     color: @white;
     padding: 1.5rem;
     font-size: 2.5rem;
+    @media @mobile {
+      // font-size: 3.5rem;
+      padding: 0;
+    }
   }
 
   .sign-up_main {
@@ -46,7 +55,7 @@
     padding: 0 15rem;
     width: 40%;
     @media @tablet {
-      width: 70%;
+      width: 100%;
       margin: 0 auto;
       padding: 0;
     }

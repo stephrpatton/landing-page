@@ -220,9 +220,9 @@ section {
     font-size: 4rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   .section-title {
-    font-size: 3rem;
+    font-size: 4.9rem;
   }
 }
 nav {
@@ -387,13 +387,19 @@ header::before {
 @media (max-width: 800px) {
   .mission .section-title {
     padding-bottom: 4rem;
-    padding-top: 6rem;
+    padding-top: 5rem;
+    font-size: 3.6rem;
   }
 }
 .mission p:last-child {
   border-bottom: #f78221 solid 1px;
   padding-bottom: 3rem;
   padding-bottom: 6rem;
+}
+@media (max-width: 800px) {
+  .mission p {
+    font-size: 1.8rem;
+  }
 }
 .mission .mission-main {
   align-self: flex-end;
@@ -604,18 +610,19 @@ header::before {
   text-align: center;
   padding: 1rem 0 2.5rem 0;
   font-weight: 600;
+  text-shadow: #f78221 3px 1px 5px;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .main-services .services-container .service h3 {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 }
 .main-services .services-container .service p {
   line-height: 2;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .main-services .services-container .service p {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 .main-services .services-container .icon {
@@ -637,24 +644,34 @@ header::before {
     margin-left: 13rem;
   }
 }
+.testimonial .section-title {
+  margin-left: 50rem;
+  padding-bottom: 3rem;
+  letter-spacing: 0.2rem;
+  text-shadow: #fff 3px 1px 5px;
+}
+@media (max-width: 800px) {
+  .testimonial .section-title {
+    text-align: center;
+    margin-left: 0;
+  }
+}
 .testimonial .testimonial-content {
   display: flex;
   justify-content: center;
   align-content: center;
   box-shadow: #fff 1px 3px 100px;
   padding: 2rem;
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
   margin-bottom: 5rem;
   border-radius: 3px;
+  background: #fff;
+  transition: all 0.5s;
   border-bottom: #f78221 solid 1px;
   padding-bottom: 3rem;
   border-top: #f78221 solid 1px;
   padding-top: 3rem;
-}
-.testimonial .testimonial-content:hover {
-  background: #fff;
-  transition: background 0.5s;
 }
 @media (max-width: 800px) {
   .testimonial .testimonial-content {
@@ -670,12 +687,15 @@ header::before {
 }
 .testimonial .content-img {
   width: 250px;
-  padding-right: 3rem;
+  display: none;
+  transition: all 0.6s;
 }
 @media (max-width: 800px) {
   .testimonial .content-img {
     width: 80%;
     height: 80%;
+    display: block;
+    padding-right: 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -686,7 +706,7 @@ header::before {
 }
 .testimonial .content-img_caption {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #f78221;
   padding-top: 0.5rem;
 }
@@ -705,20 +725,40 @@ header::before {
 }
 .testimonial .content-para {
   opacity: 0;
+  height: 0px;
+}
+@media (max-width: 800px) {
+  .testimonial .content-para {
+    opacity: 1;
+    height: 100px;
+    font-size: 1.8rem;
+  }
 }
 .testimonial .content-header {
-  font-size: 2rem;
+  font-size: 2.7rem;
   color: #f78221;
   padding-bottom: 1rem;
   font-weight: 600;
   margin-top: 2rem;
-  transition: color 0.5s;
+  transition: all 0.6s;
+  letter-spacing: 0.2rem;
+}
+@media (max-width: 800px) {
+  .testimonial .content-header {
+    letter-spacing: 0;
+  }
 }
 .see-more {
-  width: 70%;
+  width: 20%;
   margin: 0 auto;
   text-decoration: #000 underline solid;
   cursor: pointer;
+  transition: all 0.2s;
+}
+@media (max-width: 800px) {
+  .see-more {
+    display: none;
+  }
 }
 .see-more:hover {
   color: #f78221;
@@ -744,6 +784,9 @@ header::before {
 @media (max-width: 800px) {
   .sign-up {
     flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
   }
 }
 @media (max-width: 500px) {
@@ -753,11 +796,22 @@ header::before {
 }
 .sign-up p {
   padding: 2rem;
+  font-size: 1.8rem;
+}
+@media (max-width: 800px) {
+  .sign-up p {
+    padding: 2rem 0;
+  }
 }
 .sign-up .section-title {
   color: #fff;
   padding: 1.5rem;
   font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .sign-up .section-title {
+    padding: 0;
+  }
 }
 .sign-up .sign-up_main {
   width: 60%;
@@ -773,7 +827,7 @@ header::before {
 }
 @media (max-width: 800px) {
   .sign-up .sign-up_button {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     padding: 0;
   }

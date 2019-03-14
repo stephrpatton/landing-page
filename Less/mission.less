@@ -7,13 +7,20 @@
     .text-shadow(@white);
     @media @tablet {
       padding-bottom: 4rem;
-      padding-top: 6rem;
+      padding-top: 5rem;
+      font-size: 3.6rem;
     }
   }
 
   p:last-child {
     .border-thin-bottom(3rem);
     padding-bottom: 6rem;
+  }
+
+  p {
+    @media @tablet {
+      font-size: 1.8rem;
+    }
   }
 
   .mission-main {
