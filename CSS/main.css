@@ -215,6 +215,7 @@ section {
   font-weight: 600;
   color: #f78221;
   font-size: 4rem;
+  text-shadow: #000 2px 2px 2px;
 }
 @media (max-width: 500px) {
   .section-title {
@@ -384,7 +385,6 @@ header::before {
   border-top: #f78221 solid 1px;
   padding-top: 5rem;
   padding-bottom: 3rem;
-  text-shadow: #fff 3px 1px 5px;
 }
 @media (max-width: 800px) {
   .mission .section-title {
@@ -663,11 +663,18 @@ header::before {
     height: 60%;
   }
 }
+.testimonial {
+  background: #fff;
+  border-top: #f78221 solid 0.5px;
+  border-bottom: #f78221 solid 0.5px;
+  border-radius: 3px;
+  box-shadow: #fff 1px 3px 60px;
+}
 .testimonial .section-title {
   margin-left: 48rem;
   padding-bottom: 3rem;
+  padding-top: 2rem;
   letter-spacing: 0.2rem;
-  text-shadow: #fff 3px 1px 5px;
 }
 @media (max-width: 800px) {
   .testimonial .section-title {
@@ -679,24 +686,23 @@ header::before {
   display: flex;
   justify-content: center;
   align-content: center;
-  box-shadow: #fff 1px 3px 100px;
   padding: 2rem;
   width: 50%;
   margin: 0 auto;
   margin-bottom: 5rem;
-  border-radius: 3px;
+  border-radius: 2px;
   background: #fff;
   transition: all 0.5s;
-  border-bottom: #f78221 solid 1px;
-  padding-bottom: 3rem;
-  border-top: #f78221 solid 1px;
-  padding-top: 3rem;
+  border: #f78221 solid 0.5px;
 }
 @media (max-width: 800px) {
   .testimonial .testimonial-content {
     width: auto;
     background: #fff;
     margin: 0 0 2rem 0;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
   }
 }
 @media (max-width: 500px) {
@@ -747,6 +753,7 @@ header::before {
 .testimonial .content-para {
   opacity: 0;
   height: 0px;
+  font-size: 2rem;
 }
 @media (max-width: 800px) {
   .testimonial .content-para {
@@ -762,7 +769,7 @@ header::before {
   font-weight: 600;
   margin-top: 2rem;
   transition: all 0.6s;
-  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }
 @media (max-width: 800px) {
   .testimonial .content-header {
@@ -777,6 +784,8 @@ header::before {
   text-decoration: #000 underline solid;
   cursor: pointer;
   transition: all 0.2s;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 @media (max-width: 800px) {
   .see-more {
@@ -820,6 +829,7 @@ header::before {
 .sign-up p {
   padding: 2rem;
   font-size: 1.8rem;
+  font-weight: 600;
 }
 @media (max-width: 800px) {
   .sign-up p {
@@ -830,6 +840,7 @@ header::before {
   color: #fff;
   padding: 1.5rem;
   font-size: 2.5rem;
+  font-weight: 800;
 }
 @media (max-width: 500px) {
   .sign-up .section-title {
