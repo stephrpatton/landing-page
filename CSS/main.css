@@ -160,6 +160,7 @@ html {
 html,
 body {
   font-family: "Overpass", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background: #dfd9d9;
@@ -238,7 +239,7 @@ nav .menu {
   text-align: center;
   position: absolute;
   top: 50px;
-  right: 45px;
+  right: 35px;
   display: none;
   z-index: 1;
 }
@@ -276,6 +277,9 @@ nav #menu-btn:hover {
 }
 nav .main-menu {
   padding-right: 5rem;
+  position: fixed;
+  right: 0;
+  z-index: 1;
 }
 @media (max-width: 500px) {
   nav .main-menu {
@@ -473,6 +477,12 @@ header::before {
   color: #fff;
   text-shadow: #000 3px 1px 5px;
 }
+@media (max-width: 500px) {
+  .about-header nav h4 {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+}
 .about-title {
   font-size: 5rem;
   text-shadow: #000 3px 1px 5px;
@@ -481,9 +491,48 @@ header::before {
   margin-bottom: 2rem;
   text-align: center;
 }
+.about-us-pic {
+  border-radius: 10px;
+  width: 300px;
+}
+.about-us-content {
+  width: 30%;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .about-us-content {
+    width: 50%;
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-us-content {
+    width: 100%;
+  }
+}
+.about-us-name {
+  font-size: 2.8rem;
+  color: #f78221;
+}
+.about-us-title {
+  font-size: 2rem;
+}
+.about-us .links a {
+  font-size: 1.5rem;
+}
+.about-us .links a:hover {
+  color: #f78221;
+}
 .about-container {
   background: #fff;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 5rem 8rem;
+  box-shadow: #fff 20px 10px 200px;
 }
 .main-services {
   background: #fff;
@@ -607,8 +656,8 @@ header::before {
 }
 .testimonial .content-img {
   width: 250px;
-  height: 150px;
   padding-right: 3rem;
+  transition: all 0.5s;
 }
 @media (max-width: 800px) {
   .testimonial .content-img {
@@ -641,11 +690,19 @@ header::before {
     border-radius: 30%;
   }
 }
-.testimonial h4 {
+.testimonial .content-para {
+  opacity: 0;
+}
+.testimonial .content-header {
   font-size: 2rem;
   color: #f78221;
   padding-bottom: 1rem;
   font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.testimonial .content-header:hover {
+  color: #000;
 }
 .sign-up {
   color: #fff;
@@ -666,6 +723,11 @@ header::before {
 @media (max-width: 800px) {
   .sign-up {
     flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .sign-up {
+    background-position: center;
   }
 }
 .sign-up p {

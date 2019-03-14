@@ -7,6 +7,9 @@ class Menu {
     this.button.addEventListener("click", () => {
       this.toggleMenu();
     });
+    this.menuContent.addEventListener("mouseleave", () => {
+      this.disappear();
+    });
   }
 
   toggleMenu() {
@@ -21,6 +24,10 @@ class Menu {
       });
       TweenMax.to(this.menuContent, 1, { display: "none" });
     }
+  }
+
+  disappear() {
+    TweenMax.to(this.menuContent, 0.5, { display: "none" });
   }
 }
 

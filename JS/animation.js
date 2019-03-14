@@ -34,8 +34,8 @@ icons.forEach(function(icon) {
 const testContent = document.querySelectorAll(".testimonial-content");
 
 testContent.forEach(function(content) {
-  TweenMax.from(content, 2, { delay: 4, opacity: 0 });
-  TweenMax.from(content, 2, { delay: 4, y: -30 });
+  TweenMax.from(content, 2, { delay: 4.5, opacity: 0 });
+  TweenMax.from(content, 2, { delay: 4.5, y: -40 });
 });
 
 const testPic = document.querySelectorAll(".content-img_caption");

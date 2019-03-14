@@ -41,6 +41,10 @@
     h4 {
       color: @white;
       .text-shadow(@black);
+      @media @mobile {
+        font-size: 2rem;
+        padding-top: 1rem;
+      }
     }
   }
 }
@@ -55,10 +59,49 @@
     margin-bottom: 2rem;
     text-align: center;
   }
+
+  &-pic {
+    border-radius: 10px;
+    width: 300px;
+  }
+
+  &-content {
+    width: 30%;
+    padding-bottom: 5rem;
+    text-align: center;
+    @media @tablet {
+      width: 50%;
+      padding-right: 3rem;
+    }
+
+    @media @mobile {
+      width: 100%;
+    }
+  }
+
+  &-name {
+    font-size: 2.8rem;
+    color: @second-color;
+  }
+
+  &-title {
+    font-size: 2rem;
+  }
+
+  .links a {
+    font-size: 1.5rem;
+
+    &:hover {
+      color: @second-color;
+    }
+  }
 }
 
 .about-container {
   background: @white;
   border-radius: 5px;
-  // box-shadow: @white 1px 3px 100px;
+  .flex-content(space-around, center);
+  flex-wrap: wrap;
+  padding: 5rem 8rem;
+  box-shadow: @white 20px 10px 200px;
 }
