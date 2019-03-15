@@ -1,5 +1,4 @@
 .testimonial {
-  background: @white;
   border-top: @second-color solid 0.5px;
   border-bottom: @second-color solid 0.5px;
   border-radius: 3px;
@@ -10,7 +9,7 @@
   }
 
   .section-title {
-    margin-left: 48rem;
+    text-align: center;
     padding-bottom: 3rem;
     padding-top: 2rem;
     letter-spacing: 0.2rem;
@@ -30,19 +29,16 @@
     width: 50%;
     margin: 0 auto;
     margin-bottom: 5rem;
-    border-radius: 2px;
-    background: @white;
+    border-radius: 10px;
+    background: rgba(@white, 0.65);
     transition: all 0.5s;
     border: @second-color solid 0.5px;
-    // border-right: @second-color solid 0.5px;
-    // border-left: @second-color solid 0.5px;
     @media @tablet {
       width: auto;
       background: @white;
       margin: 0 0 2rem 0;
-      border-right: none;
       border-bottom: none;
-      border-left: none;
+      border-radius: 3px;
     }
     @media @mobile {
       flex-direction: column;
