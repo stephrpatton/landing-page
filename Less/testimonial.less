@@ -1,21 +1,44 @@
 .testimonial {
+  border-top: @second-color solid 0.5px;
+  border-bottom: @second-color solid 0.5px;
+  border-radius: 3px;
+  box-shadow: @white 1px 3px 60px;
+
+  @media @tablet {
+    padding-bottom: 2rem;
+  }
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    letter-spacing: 0.2rem;
+
+    @media @tablet {
+      text-align: center;
+      margin-left: 0;
+    }
+
+    @media @mobile {
+      padding-bottom: 3rem;
+    }
+  }
   .testimonial-content {
     .flex-content(center, center);
-    box-shadow: @white 1px 3px 100px;
     padding: 2rem;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     margin-bottom: 5rem;
-    border-radius: 3px;
-    .border-thin-bottom(3rem);
-    .border-thin-top(3rem);
-    &:hover {
-      background: @white;
-      transition: background 0.5s;
-    }
+    border-radius: 10px;
+    background: rgba(@white, 0.65);
+    transition: all 0.5s;
+    border: @second-color solid 0.5px;
     @media @tablet {
-      width: 100%;
+      width: auto;
       background: @white;
+      margin: 0 0 2rem 0;
+      border-bottom: none;
+      border-radius: 3px;
     }
     @media @mobile {
       flex-direction: column;
@@ -24,10 +47,14 @@
   }
   .content-img {
     width: 250px;
-    padding-right: 3rem;
+    display: none;
+    transition: all 0.6s;
+
     @media @tablet {
       width: 80%;
       height: 80%;
+      display: block;
+      padding-right: 2rem;
     }
     @media @mobile {
       width: 70%;
@@ -36,11 +63,12 @@
 
     &_caption {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: @second-color;
       padding-top: 0.5rem;
       @media @mobile {
         margin-bottom: 2rem;
+        font-weight: 800;
       }
     }
 
@@ -54,24 +82,43 @@
 
   .content-para {
     opacity: 0;
+    height: 0px;
+    font-size: 2rem;
+    @media @tablet {
+      opacity: 1;
+      height: auto;
+      font-size: 1.8rem;
+    }
   }
 
   .content-header {
-    font-size: 2rem;
+    font-size: 2.7rem;
     color: @second-color;
     padding-bottom: 1rem;
     font-weight: 600;
     margin-top: 2rem;
-    transition: color 0.5s;
+    transition: all 0.6s;
+    text-transform: uppercase;
+
+    @media @tablet {
+      letter-spacing: 0;
+      font-size: 2rem;
+      font-weight: 800;
+    }
   }
 }
 
 .see-more {
-  width: 70%;
+  width: 20%;
   margin: 0 auto;
   text-decoration: @black underline solid;
   cursor: pointer;
-
+  transition: all 0.2s;
+  text-transform: uppercase;
+  font-weight: 600;
+  @media @tablet {
+    display: none;
+  }
   &:hover {
     color: @second-color;
     text-decoration: @second-color underline solid;

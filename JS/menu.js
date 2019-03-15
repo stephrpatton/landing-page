@@ -22,7 +22,7 @@ class Menu {
       TweenMax.to(this.menuContent, 0.5, {
         y: -30
       });
-      TweenMax.to(this.menuContent, 1, { display: "none" });
+      TweenMax.to(this.menuContent, 0.5, { display: "none" });
     }
   }
 

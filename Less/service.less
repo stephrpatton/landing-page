@@ -1,11 +1,14 @@
 .main-services {
-  background: @white;
+  background: rgba(@white, 0.65);
   box-shadow: @white 1px 3px 60px;
   .border-thin-bottom(3px);
   .border-thin-top(3px);
   .section-title {
     text-align: center;
     padding: 5rem 0;
+    @media @mobile {
+      font-size: 4.6rem;
+    }
   }
   .services-container {
     .flex-content(space-between, center);
@@ -43,17 +46,20 @@
       h3 {
         text-align: center;
         padding: 1rem 0 2.5rem 0;
-        font-weight: 600;
+        font-weight: 800;
 
-        @media @mobile {
-          font-size: 2.8rem;
+        @media @tablet {
+          font-size: 3rem;
+        }
+        @media @tablet {
+          font-size: 3.5rem;
         }
       }
 
       p {
         line-height: 2;
-        @media @mobile {
-          font-size: 1.5rem;
+        @media @tablet {
+          font-size: 2.2rem;
         }
       }
     }
@@ -70,7 +76,9 @@
         height: 40%;
       }
       @media @mobile {
-        margin-left: 13rem;
+        margin-left: 7rem;
+        width: 60%;
+        height: 60%;
       }
     }
   }

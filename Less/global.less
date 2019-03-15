@@ -77,10 +77,13 @@ section {
 .section-title {
   font-weight: 600;
   color: @second-color;
-  @media @tablet {
-    font-size: 4rem;
+  font-size: 4rem;
+  .text-shadow-title();
+  @media @mobile {
+    font-size: 4.9rem;
   }
-  @media @tablet {
-    font-size: 3rem;
-  }
+}
+
+.color-orange {
+  color: @second-color;
 }
