@@ -293,8 +293,8 @@ nav .main-menu {
   }
 }
 header {
-  background: linear-gradient(rgba(247, 130, 33, 0.35), rgba(247, 130, 33, 0.35), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../img/header.jpg");
-  -webkit-background: linear-gradient(rgba(247, 130, 33, 0.35), rgba(247, 130, 33, 0.35), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../img/header.jpg");
+  background: linear-gradient(rgba(247, 130, 33, 0.35), rgba(247, 130, 33, 0.35), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("img/header.jpg");
+  -webkit-background: linear-gradient(rgba(247, 130, 33, 0.35), rgba(247, 130, 33, 0.35), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("img/header.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -462,8 +462,8 @@ header::before {
   }
 }
 .about-header {
-  background: linear-gradient(rgba(247, 130, 33, 0.35), rgba(247, 130, 33, 0.35), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../img/about-us.jpg");
-  -webkit-background: linear-gradient(rgba(247, 130, 33, 0.35), rgba(247, 130, 33, 0.35), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("../img/about-us.jpg");
+  background: linear-gradient(rgba(247, 130, 33, 0.35), rgba(247, 130, 33, 0.35), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("img/about-us.jpg");
+  -webkit-background: linear-gradient(rgba(247, 130, 33, 0.35), rgba(247, 130, 33, 0.35), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url("img/about-us.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
